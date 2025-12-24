@@ -35,8 +35,15 @@ This document describes the setup of the `dev` branch for development purposes.
 
 ## Branch Structure
 ```
-dev (local)
+dev (local) - Contains the C source file
 ├── hello.c (NEW)
+├── test.cpp
+├── test-2.cpp
+└── analysis-2.txt
+
+copilot/create-dev-branch - Contains documentation about dev branch
+├── DEV_BRANCH_SETUP.md
+├── TASK_COMPLETION_SUMMARY.md
 ├── test.cpp
 ├── test-2.cpp
 └── analysis-2.txt
