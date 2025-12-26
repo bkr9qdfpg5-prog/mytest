@@ -1,14 +1,14 @@
 #include <iostream>
 
 int main() {
-    int x;          // Uninitialized local variable
-    bool flag;      // Another uninitialized variable
+    int x = 0;          // Initialize to avoid undefined behavior
+    bool flag = false;  // Initialize to avoid undefined behavior
 
-    if (flag) {     // Uses uninitialized 'flag' -> undefined behavior
+    if (flag) {
         x = 42;
     }
 
-    std::cout << x << std::endl;  // Uses uninitialized 'x' if flag was false
+    std::cout << x << std::endl;
 
     return 0;
 }
